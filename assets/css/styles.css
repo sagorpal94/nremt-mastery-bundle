@@ -1,0 +1,1188 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 120%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #121212;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 48px 32px;
+    background-color: #F1F1F1;
+}
+
+.header .reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.header .reviews .stars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .reviews .stars svg {
+    width: 32px;
+    height: 32px;
+}
+
+.header .reviews p {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-left: 8px;
+}
+
+.header .offer-banner {
+    font-size: 23px;
+    font-weight: 400;
+    color: red;
+    margin: 10px 0;
+}
+
+.header h1 {
+    max-width: 600px;
+    font-size: 46px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.1;
+}
+
+.header .subtitle {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0 20px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #0097E1;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.guarantee {
+    text-align: center;
+}
+
+.guarantee p {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.trustpilot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.guarantee .trustpilot img {
+    height: 30px;
+    object-fit: cover;
+}
+
+.guarantee .trustpilot span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.product-info {
+    text-align: center;
+    width: 550px;
+    max-width: 100%;
+    margin: 16px 0;
+}
+
+.product-info h2 {
+    font-size: 41px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.testimonial {
+    background-color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 24px 25px;
+}
+
+.testimonial-title {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 52px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.testimonial .stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial .stars svg {
+    width: 26px;
+    height: 26px;
+    fill: #DFA31C;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 26px;
+    line-height: 140%;
+    margin: 20px 0;
+}
+
+.testimonial-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.author-name {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.testimonial-author svg {
+    width: 26px;
+    height: 26px;
+}
+
+.author-badge {
+    font-size: 26px;
+    font-style: italic;
+}
+
+.recognition {
+    background: linear-gradient(359deg, #0552B0 0%, #36A1CE 60%, #54D2E1 100%);
+    color: #fff;
+    padding: 12px 40px;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.awards {
+    padding: 20px 50px 0;
+    text-align: center;
+}
+
+.award-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 30px 0 0;
+}
+
+.badge {
+    width: 90px;
+    height: auto;
+    object-fit: cover;
+}
+
+.award-title h2 {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-showcase {
+    margin: 0 0 25px;
+}
+
+.booth-image {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.innovation-award h2 {
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 150%;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.award-description {
+    padding: 0 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+.guarantee .reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.guarantee .reviews .stars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.guarantee .reviews .stars svg {
+    width: 26px;
+    height: 26px;
+    fill: #DFA31C;
+}
+
+.guarantee .reviews p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+.testimonial-showcase .quote-title {
+    text-transform: uppercase;
+    line-height: 120%;
+    font-weight: 400;
+    font-size: 52px;
+    color: #121212;
+    font-family: "Luckiest Guy", cursive;
+    margin-top: 20px;
+}
+
+.testimonial-card {
+    /* padding: 0 50px; */
+    margin: 48px 0 30px;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    align-items: start;
+    width: 650px;
+    max-width: 100%;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    max-width: max-content;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.testimonial-details {
+    background: #F1F1F1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.testimonial-details h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.review-content {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.product-image {
+    margin-top: 30px;
+}
+
+.product-image .cards-display {
+    border-radius: 10px;
+}
+
+.review-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 50px;
+}
+
+.review-title {
+    width: 500px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 120%;
+    font-size: 52px;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    color: #121212;
+}
+
+.review-section_1 {
+    margin: 10px 0;
+    /* display: block; */
+    text-align: center;
+    width: 100%;
+}
+
+.review-section_1 .abc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-title-width {
+    width: 750px;
+    max-width: 100%;
+    font-size: 47px;
+}
+
+
+.reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviews .stars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews .stars svg {
+    width: 26px;
+    height: 26px;
+    fill: #DFA31C;
+}
+
+.review-title-width_1 {
+    width: 650px;
+    max-width: 100%;
+    font-size: 47px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.review-image-section {
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+.layout {
+    margin: 0 auto 30px;
+    padding: 30px 20px;
+    width: 800px;
+    display: grid;
+    place-content: start;
+    grid-template-columns: minmax(0, 12fr);
+    column-gap: 8px;
+    max-width: 100%;
+}
+
+.layout_overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout_overview_1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.success-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 800px;
+    font-family: "Poppins", sans-serif;
+}
+
+.success-section-inner {
+    margin: 30px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-image {
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.grade-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.success-title {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 30px;
+    color: #000;
+    width: 550px;
+    text-align: center;
+}
+
+.success-text {
+    font-size: 21px;
+    line-height: 1.6;
+    color: #333;
+    width: 610px;
+    text-align: center;
+}
+
+.reviews-all {
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .reviews-all {
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-all {
+        padding: 0 20px;
+    }
+
+    .text {
+        text-align: justify;
+    }
+}
+
+.reviews-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.review-single {
+    font-family: "Poppins", sans-serif;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    display: grid;
+    grid-template-columns: minmax(0, 12fr);
+    column-gap: 8px;
+    place-content: start;
+    border-radius: 16px;
+    background-color: #F1F1F1;
+}
+
+.review-single-inner {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.review-single-inner img {
+    object-fit: cover;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.review-single-content {
+    padding: 0 20px 0;
+    margin-top: 20px;
+}
+
+.review-single-content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review-single-name {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.review-single-name .name {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.review-single-name svg {
+    width: 25px;
+    height: 25px;
+}
+
+.review-single-name .verified {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.date {
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.review-start-section {
+    justify-content: start;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 400;
+    color: #000;
+}
+
+.product-section {
+    padding: 48px 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-section .image-section {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.product-section .image-section img {
+    width: 90px;
+    object-fit: cover;
+}
+
+.product-section .brand-image {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.product-section .brand-image img {
+    width: 600px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-details-inner {
+    width: 600px;
+}
+
+.product-details-inner .product-name {
+    font-size: 17px;
+    line-height: 130%;
+}
+
+.bundle {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+.items {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+}
+
+.product-price {
+    margin: 20px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.discount-price {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.actual-price {
+    color: #F40202;
+    font-size: 19px;
+    line-height: 120%;
+    text-decoration: line-through;
+}
+
+.discount-off {
+    padding: 4px 5px 4px 2px;
+    background-color: #23A35B;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.benefits-section {
+    padding: 32px 50px 48px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.benefit-icon {
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.benefit-card h2 {
+    width: 550px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.benefit-text {
+    width: 610px;
+    font-size: 21px;
+    line-height: 130%;
+    text-align: center;
+}
+
+.benefit-card .trustpilot {
+    width: 350px;
+    object-fit: cover;
+}
+
+
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stats-section h2 {
+    font-size: 35px;
+    line-height: 120%;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.stats-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 120%;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 600px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding: 20px 0;
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-circle img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.stat-text {
+    font-size: 23px;
+    line-height: 120%;
+    flex: 1;
+}
+
+.stats-note {
+    font-size: 17px;
+    margin: 5px 0 40px;
+    text-align: center;
+}
+
+.facts-title {
+    font-size: 42px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+
+.comparison-table {
+    width: 100%;
+    border-collapse: separate; /* Replaces 'separate' for single borders */
+    border-spacing: 0;
+}
+
+/* Remove header borders and maintain styling */
+.comparison-table thead th {
+    border: none !important;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    height: 110px;
+}
+
+.comparison-table thead th img {
+    display: block;
+    margin: 0 auto 10px;
+    max-height: 50px;
+}
+
+/* Add top border to first body row */
+.comparison-table tbody tr:first-child td {
+    border-top: 1px solid #121212;
+}
+
+/* Body cells - single borders */
+.comparison-table tbody td {
+    border: 1px solid #121212;
+    border-top: none; /* Remove top border (handled by first row) */
+    padding: 12px 15px;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+}
+
+/* First cell in first row - top-left radius */
+.comparison-table tbody tr:first-child td:first-child {
+    border-top-left-radius: 32px;
+}
+
+/* First cell in last row - bottom-left radius */
+.comparison-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 32px;
+}
+
+/* Last cell in last row - bottom-right radius */
+.comparison-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 32px;
+}
+
+/* Header rounded corners */
+.comparison-table thead th:first-child {
+    border-top-left-radius: 32px;
+}
+
+.comparison-table thead th:last-child {
+    border-top-right-radius: 32px;
+}
+
+/* Keep existing utility classes */
+.dark {
+    background: #002a5c;
+    color: white;
+}
+
+.check {
+    color: white;
+    font-size: 17px;
+}
+
+.cross {
+    color: red;
+    font-size: 17px;
+}
+
+.empty-cell {
+    background: transparent;
+    border: none !important;
+}
+
+
+.rounded-bottom-right {
+    border-bottom-right-radius: 32px;
+}
+
+.table-container {
+    overflow-x: auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+
+.final-cta {
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-cta-inner {
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.final-cta-inner h2 {
+    font-size: 35px;
+    font-weight: 700;
+    /* margin-bottom: 20px; */
+    line-height: 120%;
+}
+
+.final-cta-inner .highlight {
+    text-decoration: underline;
+}
+
+.choice-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.footer {
+    margin: 30px 0 0;
+}
+
+.footer-logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.copyright {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: block;
+        padding: 32px 16px;
+    }
+
+    .header .reviews {
+        flex-wrap: wrap;
+    }
+
+    .header .reviews p {
+        font-size: 14px;
+    }
+
+    .header .offer-banner {
+        font-size: 19px;
+    }
+
+    .header .subtitle {
+        font-size: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .product-info h2 {
+        font-size: 25px;
+    }
+
+    .product-info p {
+        font-size: 16px;
+    }
+
+    .testimonial {
+        padding: 25px 10px;
+    }
+
+    .testimonial-title {
+        font-size: 25px;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .author-name, .author-badge {
+        font-size: 17px;
+    }
+
+    .testimonial-author svg {
+        width: 20px;
+    }
+
+    .recognition {
+        padding: 16px;
+        font-size: 20px;
+    }
+
+    .testimonial-showcase .quote-title {
+        font-size: 34px;
+    }
+
+    .badge {
+        width: 45px;
+    }
+
+    .award-badges {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .award-title h2 {
+        font-size: 18px;
+    }
+
+    .innovation-award h2 {
+        font-size: 22px;
+    }
+
+    .award-description {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .review-title {
+        font-size: 34px;
+    }
+
+    .awards {
+        padding: 0 20px;
+    }
+
+    .cta-button {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .guarantee .reviews {
+        flex-wrap: wrap;
+    }
+
+    .guarantee p {
+        font-size: 16px;
+    }
+
+    .success-image {
+        width: 100%;
+    }
+
+    .success-section {
+        padding: 40px 20px;
+        width: 100%;
+        width: 100%;
+    }
+
+    .success-title {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .success-text {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .success-section-inner {
+        margin: 0;
+    }
+
+    .product-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .product-details-inner {
+        width: 100%;
+    }
+
+    .items {
+        font-size: 13px;
+    }
+
+    .bundle {
+        font-size: 27px;
+    }
+
+    .benefits-section {
+        padding: 0;
+    }
+
+    .icon {
+        width: 200px;
+    }
+
+    .benefit-card h2 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .benefit-text {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .benefit-card .trustpilot {
+        width: 180px;
+    }
+
+    .comparison-table tbody td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .stats-section {
+        padding: 0 20px;
+    }
+
+    .stats-section h2 {
+        font-size: 30px;
+    }
+
+    .stats-subtitle {
+        font-size: 16px;
+    }
+
+    .stat-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .stat-circle img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .stat-text {
+        font-size: 14px;
+    }
+
+    .stats-container {
+        width: 100%;
+    }
+
+    .final-cta {
+        padding: 0 20px;
+    }
+
+    .final-cta-inner {
+        width: 100%;
+    }
+
+    .final-cta-inner h2 {
+        font-size: 24px;
+    }
+
+    .footer {
+        margin: 10px 0 24px;
+    }
+
+    .footer-logo {
+        width: 80px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
