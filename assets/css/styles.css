@@ -508,23 +508,6 @@ img {
     gap: 20px;
 }
 
-@media (min-width: 768px) {
-    .reviews-all {
-        padding: 0 20px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .reviews-all {
-        padding: 0 20px;
-    }
-
-    .text {
-        text-align: justify;
-    }
-}
-
 .reviews-col {
     display: flex;
     flex-direction: column;
@@ -773,7 +756,7 @@ img {
 .stats-container {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
     width: 600px;
 }
 
@@ -818,11 +801,10 @@ img {
 
 .comparison-table {
     width: 100%;
-    border-collapse: separate; /* Replaces 'separate' for single borders */
+    border-collapse: separate;
     border-spacing: 0;
 }
 
-/* Remove header borders and maintain styling */
 .comparison-table thead th {
     border: none !important;
     padding: 15px;
@@ -837,15 +819,13 @@ img {
     max-height: 50px;
 }
 
-/* Add top border to first body row */
 .comparison-table tbody tr:first-child td {
     border-top: 1px solid #121212;
 }
 
-/* Body cells - single borders */
 .comparison-table tbody td {
     border: 1px solid #121212;
-    border-top: none; /* Remove top border (handled by first row) */
+    border-top: none;
     padding: 12px 15px;
     font-size: 21px;
     font-weight: 500;
@@ -853,22 +833,23 @@ img {
     text-align: center;
 }
 
-/* First cell in first row - top-left radius */
+.comparison-table thead tr  th:nth-child(2) {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
 .comparison-table tbody tr:first-child td:first-child {
     border-top-left-radius: 32px;
 }
 
-/* First cell in last row - bottom-left radius */
 .comparison-table tbody tr:last-child td:first-child {
     border-bottom-left-radius: 32px;
 }
 
-/* Last cell in last row - bottom-right radius */
 .comparison-table tbody tr:last-child td:last-child {
     border-bottom-right-radius: 32px;
 }
 
-/* Header rounded corners */
 .comparison-table thead th:first-child {
     border-top-left-radius: 32px;
 }
@@ -877,7 +858,6 @@ img {
     border-top-right-radius: 32px;
 }
 
-/* Keep existing utility classes */
 .dark {
     background: #002a5c;
     color: white;
@@ -927,7 +907,6 @@ img {
 .final-cta-inner h2 {
     font-size: 35px;
     font-weight: 700;
-    /* margin-bottom: 20px; */
     line-height: 120%;
 }
 
@@ -954,6 +933,13 @@ img {
 
 .copyright {
     font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .reviews-all {
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -1071,6 +1057,14 @@ img {
         padding: 40px 20px;
         width: 100%;
         width: 100%;
+    }
+
+    .reviews-all {
+        padding: 0 20px;
+    }
+
+    .text {
+        text-align: justify;
     }
 
     .success-title {
